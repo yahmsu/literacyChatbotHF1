@@ -853,13 +853,8 @@ final -> done
             "Totally fine! Just a quick hint before we move on: This event never occurred. However, when a caption is paired with an image, people tend to believe the information more easily than when reading text alone. In this case, the image makes the caption seem more plausible. But remember: this caption is not factual. Always verify such claims with credible news outlets or official reports."
           );
         }
-  
-        finalChecklist();
 
-        appendMessage(
-          "bot",
-          "Please return to the survey tab and complete the remaining questions."
-        );
+        finalChecklist();
       }
 
       /* ------------------------------------------------------------------
@@ -869,10 +864,12 @@ final -> done
       function finalChecklist() {
         appendMessage(
           "bot",
-          "Thanks for chatting with me! Keep these clues in mind when scrolling online. Sometimes, the most believable posts are the ones we need to question the most.\n\nBased on everything we went over today, here’s a checklist of things you should always always keep in mind before trusting what you see online:\n\nInitial Belief Check\n• Images paired with text feel more convincing—don’t trust your first gut feeling.\n• Always pause and dig deeper before accepting what you see.\n\nPhysical Anomalies\n• Look for body parts that merge or overlap unnaturally (e.g., fused torsos).\n• Watch for missing or distorted limbs (e.g., the girl appears to have no legs).\n\nDetail & Texture Glitches\n• Zoom in on patterns and textures—blurred or smeared fabric patterns are telltale AI errors.\n• Check for inconsistent lighting, odd reflections, or overly smooth surfaces.\n\nEdge & Blending Issues\n• Inspect hairlines and object edges—clumped strands or fuzzy boundaries often reveal composites.\n• Background elements (like cameras or faces) may merge unnaturally or look warped.\n\nCaption vs. Reality\n• A polished, dramatic caption can boost credibility—question any caption that feels “too perfect.”\n• Verify the event with reputable news outlets or official sources; a convincing caption doesn’t guarantee truth.\n\nPro Tip:\nWhenever something seems “too perfect,” “too polished,” or “too emotional,” zoom in, compare it with known authentic images, and cross-check multiple trusted sources before drawing conclusions."
+          "Thanks for chatting with me! Keep these clues in mind when scrolling online. Sometimes, the most believable posts are the ones we need to question the most.\n\nBased on everything we went over today, here’s a checklist of things you should always always keep in mind before trusting what you see online:\n\nInitial Belief Check\n• Images paired with text feel more convincing—don’t trust your first gut feeling.\n• Always pause and dig deeper before accepting what you see.\n\nPhysical Anomalies\n• Look for body parts that merge or overlap unnaturally (e.g., fused torsos).\n• Watch for missing or distorted limbs (e.g., the girl appears to have no legs).\n\nDetail & Texture Glitches\n• Zoom in on patterns and textures—blurred or smeared fabric patterns are telltale AI errors.\n• Check for inconsistent lighting, odd reflections, or overly smooth surfaces.\n\nEdge & Blending Issues\n• Inspect hairlines and object edges—clumped strands or fuzzy boundaries often reveal composites.\n• Background elements (like cameras or faces) may merge unnaturally or look warped.\n\nCaption vs. Reality\n• A polished, dramatic caption can boost credibility—question any caption that feels “too perfect.”\n• Verify the event with reputable news outlets or official sources; a convincing caption doesn’t guarantee truth.\n\nPro Tip:\nWhenever something seems “too perfect,” “too polished,” or “too emotional,” zoom in, compare it with known authentic images, and cross-check multiple trusted sources before drawing conclusions.",
+          "Please return to the survey tab and complete the remaining questions."
         );
         currentState = "done";
       }
+
       /* ------------------------------------------------------------------
    5. NATURAL LANGUAGE PARSER (normalizeInput) + STATE MAPPING
 ------------------------------------------------------------------ */
